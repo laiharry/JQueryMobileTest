@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+
+</head>
+
+<body>
+https://codepen.io/jorgecardoso/post/create-a-mobile-app-with-jquery-mobile-and-phonegap-build#sec-prepare-jquery-mobile
+
+<!-- Start of first page -->
+<div data-role="page" id="first-page">
+    <div role="main" class="ui-content">
+        <h1>Pages</h1>
+        <h2>Page 1</h2>
+        <p>jQuery Mobile is built around the concept of pages: units of content and navigation.
+        </p>
+        <p>Pages are defined by adding the "data-role" attribute to a div and defining an id. Inside a page we can have different types of elements, but the main content goes into a div with a "class" of "ui-content"</p>
+        <p>We can allow users to navigate through pages simply by inserting a link to the id of the page</p>
+        <p>View internal page called <a href="#second-page">Second</a></p>
+    </div>
+    <!-- /content -->
+</div>
+<!-- /page -->
+
+
+<!-- Start of second page -->
+<div data-role="page" id="second-page">
+    <div role="main" class="ui-content">
+        <h1>Pages</h1>
+        <h2>Page 2</h2>
+        <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+        <p><a href="#first-page">Back to First</a></p>
+        <p><a href="#third-page">Forward to Third</a></p>
+    </div>
+    <!-- /content -->
+</div>
+<!-- /page -->
+
+
+<!-- Start of third page -->
+<div data-role="page" id="third-page">
+    <div role="main" class="ui-content">
+        <h1>Pages</h1>
+        <h2>Page 3</h2>
+        <p>I'm the third in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+        <p><a href="#first-page">Back to First</a></p>
+        <p><a href="#second-page">Back to Second</a></p>
+    </div>
+    <!-- /content -->
+
+</div>
+<!-- /page -->
+
+
+
+</body>
+</html>
