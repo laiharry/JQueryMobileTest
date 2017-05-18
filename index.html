@@ -10,49 +10,127 @@
 </head>
 
 <body>
-https://codepen.io/jorgecardoso/post/create-a-mobile-app-with-jquery-mobile-and-phonegap-build#sec-prepare-jquery-mobile
+<!--
+https://codepen.io/jorgecardoso/post/create-a-mobile-app-with-jquery-mobile-and-phonegap-build#sec-intro
+-->
 
 <!-- Start of first page -->
 <div data-role="page" id="first-page">
+    
+    <div data-role="header" data-position="fixed">
+
+        <div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+            <a data-icon="gear" data-role="button" data-inline="true" href="#">Settings</a>
+        </div>
+        <h1>First page </h1>
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a data-icon="arrow-d-l" href="#first-page">Page 1</a>
+                </li>
+                <li>
+                    <a data-icon="arrow-d" href="#second-page">Page 2</a>
+                </li>
+                <li>
+                    <a data-icon="arrow-d-l" href="#third-page">Page 3</a>
+                </li>
+                </ui>
+        </div>
+    </div>
+    <!-- /header -->
+
     <div role="main" class="ui-content">
-        <h1>Pages</h1>
-        <h2>Page 1</h2>
-        <p>jQuery Mobile is built around the concept of pages: units of content and navigation.
-        </p>
-        <p>Pages are defined by adding the "data-role" attribute to a div and defining an id. Inside a page we can have different types of elements, but the main content goes into a div with a "class" of "ui-content"</p>
-        <p>We can allow users to navigate through pages simply by inserting a link to the id of the page</p>
-        <p>View internal page called <a href="#second-page">Second</a></p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan eros sed tortor ultrices, non dapibus sem pretium. Donec volutpat nibh mi, eu condimentum lacus commodo ut. Donec placerat, risus et efficitur ultricies, leo enim porta est, quis
+            laoreet turpis enim ac ligula. Aliquam consectetur est id est rhoncus iaculis. Quisque dignissim elementum suscipit. Nullam sodales arcu magna, et cursus sapien malesuada non. Ut id erat in ante efficitur dapibus. Sed augue eros, viverra vel interdum
+            fringilla, suscipit eget sapien.</p>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan eros sed tortor ultrices, non dapibus sem pretium. Donec volutpat nibh mi, eu condimentum lacus commodo ut. Donec placerat, risus et efficitur ultricies, leo enim porta est, quis
+            laoreet turpis enim ac ligula. Aliquam consectetur est id est rhoncus iaculis. Quisque dignissim elementum suscipit. Nullam sodales arcu magna, et cursus sapien malesuada non. Ut id erat in ante efficitur dapibus. Sed augue eros, viverra vel interdum
+            fringilla, suscipit eget sapien.</p>
     </div>
     <!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Page Footer</h4>
+    </div>
+    <!-- /footer -->
 </div>
 <!-- /page -->
 
-
 <!-- Start of second page -->
 <div data-role="page" id="second-page">
+
+    <div data-role="header" data-position="fixed">
+
+        <div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+            <a data-icon="gear" data-role="button" data-inline="true" href="#">Settings</a>
+        </div>
+        <h1>Second page </h1>
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a data-icon="arrow-d-l" href="#first-page">Page 1</a>
+                </li>
+                <li>
+                    <a data-icon="arrow-d" href="#second-page">Page 2</a>
+                </li>
+                <li>
+                    <a data-icon="arrow-d-l" href="#third-page">Page 3</a>
+                </li>
+                </ui>
+        </div>
+    </div>
+    <!-- /header -->
+
     <div role="main" class="ui-content">
-        <h1>Pages</h1>
-        <h2>Page 2</h2>
-        <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-        <p><a href="#first-page">Back to First</a></p>
-        <p><a href="#third-page">Forward to Third</a></p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan eros sed tortor ultrices, non dapibus sem pretium. Donec volutpat nibh mi, eu condimentum lacus commodo ut. Donec placerat, risus et efficitur ultricies, leo enim porta est, quis
+            laoreet turpis enim ac ligula. Aliquam consectetur est id est rhoncus iaculis. Quisque dignissim elementum suscipit. Nullam sodales arcu magna, et cursus sapien malesuada non. Ut id erat in ante efficitur dapibus. Sed augue eros, viverra vel interdum
+            fringilla, suscipit eget sapien.</p>
     </div>
     <!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Page Footer</h4>
+    </div>
+    <!-- /footer -->
 </div>
 <!-- /page -->
 
 
 <!-- Start of third page -->
 <div data-role="page" id="third-page">
+    <div data-role="header" data-position="fixed">
+        <div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+            <a data-icon="gear" data-role="button" data-inline="true" href="#">Settings</a>
+        </div>
+        <h1>Third page </h1>
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a data-icon="arrow-d-l" href="#first-page">Page 1</a>
+                </li>
+                <li>
+                    <a data-icon="arrow-d" href="#second-page">Page 2</a>
+                </li>
+                <li>
+                    <a data-icon="arrow-d-l" href="#third-page">Page 3</a>
+                </li>
+                </ui>
+        </div>
+    </div>
+    <!-- /header -->
+
     <div role="main" class="ui-content">
-        <h1>Pages</h1>
-        <h2>Page 3</h2>
-        <p>I'm the third in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-        <p><a href="#first-page">Back to First</a></p>
-        <p><a href="#second-page">Back to Second</a></p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan eros sed tortor ultrices, non dapibus sem pretium. Donec volutpat nibh mi, eu condimentum lacus commodo ut. Donec placerat, risus et efficitur ultricies, leo enim porta est, quis
+            laoreet turpis enim ac ligula. Aliquam consectetur est id est rhoncus iaculis. Quisque dignissim elementum suscipit. Nullam sodales arcu magna, et cursus sapien malesuada non. Ut id erat in ante efficitur dapibus. Sed augue eros, viverra vel interdum
+            fringilla, suscipit eget sapien.</p>
     </div>
     <!-- /content -->
 
+    <div data-role="footer" data-position="fixed">
+        <h4>Page Footer</h4>
+    </div>
+    <!-- /footer -->
 </div>
 <!-- /page -->
 
